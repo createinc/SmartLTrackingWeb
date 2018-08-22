@@ -12,7 +12,9 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-cred = credentials.Certificate('/home/vishnu/Downloads/smartltracking-firebase-adminsdk-413gu-d5b91b1342.json')
+''' Add Firebase Admin path '''
+
+cred = credentials.Certificate('D:\Code\GitProjects\smartltracking-firebase-adminsdk-413gu-d5b91b1342.json')
 default_app = firebase_admin.initialize_app(cred,{'databaseURL': "https://smartltracking.firebaseio.com"})
 root = db.reference()
 user_password = ""
